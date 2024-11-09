@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contet="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            #image {
+                display: none;
+                color: rgb(255, 42, 42);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="continer">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+
+        <img id="loader" src="Img0_(Windows_11).jpg" width="800" alt="312">
+        <img id="image" src="image.jpg.jpg" width="800" alt="123" onload="myFunc()">
+
+        <script>
+            function myFunc() {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('image').style.display = 'inline-block';
+              
+            }
+        </script>
+    </body>
+</html>
